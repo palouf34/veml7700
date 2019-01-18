@@ -2,14 +2,8 @@
 import machine
 import time
 
-from ustruct import unpack, unpack_from, calcsize
-from array import array
-
-import ubinascii
-
 # import special library
 import veml7700
-
 
 # address  of external captor
 vmle7700_addr = 0x10
@@ -43,8 +37,6 @@ i=0
 while i<4:
   
   #read the coptor values   
-  
-  
   mesure_lux = capteur_lumiere.read_lux()
   print("Values of  VLME7700 : ")
   print("The value is  ", mesure_lux, " lux")
