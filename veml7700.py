@@ -175,7 +175,7 @@ class VEML7700:
         self.i2c.readfrom_mem_into(self.address, als, self.lux)
         self.lux= self.lux[0]+self.lux[1]*256
         self.lux=self.lux*self.gain
-        return(self.lux)
+        return(int(round(self.lux,0)))
         
     
 
