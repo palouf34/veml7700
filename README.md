@@ -16,9 +16,13 @@ lux_val = veml.read_lux()
 ```
 
 Parameters:
+
 `address`: The I2C address of the sensor, standard is `0x10`
+
 `i2c`: The I2C bus object
+
 `it`: The integration time of the sensor, standard is `25 ms`
 Available times are: `25, 50, 100, 200, 400, 800 ms`
+
 `gain`: The gain of the sensor, standard is `1/8`
 Available gains are: `1/8, 1/4, 1, 2`
